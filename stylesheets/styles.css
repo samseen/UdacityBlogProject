@@ -1,0 +1,236 @@
+body {
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30vh 45vh 60vh 45vh 60vh;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "logo logo logo logo"
+    "bottomLeft bottomLeft bottomRight bottomRight"
+    "horizontalOne horizontalTwo horizontalThree horizontalFour"
+    "fourthOne fourthOne fourthTwo fourthTwo"
+    "horizontalTwoOne horizontalTwoTwo horizontalTwoThree horizontalTwoFour";
+    /* border: 2px solid red; */
+    justify-content: center;
+}
+
+.horizontal-content {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    /* border: 1px solid green; */
+    padding: 20px;
+    flex-direction: column;
+}
+
+.horizontal-title {
+    color: white;
+    width: 50%;
+}
+
+.vertical-title {
+    justify-content: flex-start;
+    color: white;
+    width: 100%;
+}
+
+.main-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+button {
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px 20px 10px 20px;
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-style: solid;
+}
+
+.read-more {
+    display: flex;
+    width: 30%;
+}
+
+.background-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.logo img{
+    flex-shrink:0;
+    -webkit-flex-shrink: 0;
+    max-width:70%;
+    max-height:90%;
+}
+
+.coffee-story {
+    background-image: url("../images/coffee.png");
+}
+
+.horizon {
+    background-image: url("../images/horizon.png");
+}
+
+.photography {
+    background-image: url("../images/Architecture.png");
+}
+
+.plant {
+    background-image: url("../images/Plant.png");
+}
+
+.architecture {
+    background-image: url("../images/Structure.png");
+}
+
+.vacation {
+    background-image: url("../images/Vacation.png");
+}
+
+.world {
+    background-image: url("../images/Science.png");
+}
+
+.beach {
+    background-image: url("../images/Beachpalm.png");
+}
+
+.steel-structure {
+    background-image: url("../images/Steelstructure.png");
+}
+
+.pineapple {
+    background-image: url("../images/Pineapple.png");
+}
+
+.alone {
+    background-image: url("../images/Alone.png");
+}
+
+.technology {
+    background-image: url("../images/Technology.png");
+}
+
+.survivor {
+    background-image: url("../images/Survivor.png");
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#two {
+    grid-area: bottomLeft;
+}
+
+#three {
+    grid-area: bottomRight;
+}
+
+#horizontal-row-one {
+    grid-area: horizontalOne;
+}
+
+#horizontal-row-two {
+    grid-area: horizontalTwo;
+}
+
+#horizontal-row-three {
+    grid-area: horizontalThree;
+}
+
+#horizontal-row-four {
+    grid-area: horizontalFour;
+}
+
+#four-one {
+    grid-area: fourthOne;
+}
+
+#four-two {
+    grid-area: fourthTwo;
+}
+
+#four-three {
+    grid-area: fourthThree;
+}
+
+#four-four {
+    grid-area: fourthFour;
+}
+
+#horizontal-two-one {
+    grid-area: horizontalTwoOne;
+}
+
+#horizontal-two-two {
+    grid-area: horizontalTwoTWo;
+}
+
+#horizontal-two-three {
+    grid-area: horizontalTwoThree;
+}
+
+#horizontal-two-four {
+    grid-area: horizontalTwoFour;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        width: 80%;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 15vh 60vh 60vh 60vh 60vh 60vh 60vh 60vh 60vh 60vh 60vh 60vh 60vh;
+        grid-gap: 15px;
+        grid-template-areas: 
+        "logo"
+        "bottomLeft"
+        "bottomRight"
+        "horizontalOne"
+        "horizontalTwo"
+        "horizontalThree"
+        "horizontalFour"
+        "fourthOne"
+        "fourthTwo"
+        "horizontalTwoOne"
+        "horizontalTwoTwo"
+        "horizontalTwoThree"
+        "horizontalTwoFour"
+        ;
+        /* border: 2px solid red; */
+        justify-content: center;
+    }
+
+    .main-title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .vertical-title,
+    .horizontal-title {
+        width: 100%;
+    }
+    
+    .tag {
+        font-size: 12px;
+    }
+
+}
