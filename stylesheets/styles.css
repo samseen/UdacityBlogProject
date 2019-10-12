@@ -55,6 +55,10 @@ button {
     border-style: solid;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .read-more {
     display: flex;
     width: 30%;
